@@ -17,13 +17,12 @@ function handleFormSubmit(event) {
         title: title,
         content: content,
     }; 
-    localStorage.setItem('blogData', JSON.stringify(blogData));
+    storeLocalStorage(blogData);
     window.location.href = './index.html';
-    localStorage.getItem('blogData');
+    readLocalStorage(blogData);
     }
     }
     
-    storeLocalStorage(blogData);
     redirectPage;
 
 // TODO: Add an event listener to the form on submit. Call the function to handle the form submission.
