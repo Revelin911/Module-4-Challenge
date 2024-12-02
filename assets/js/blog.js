@@ -2,15 +2,15 @@
 const main = document.querySelector('main');
 const backButton = document.querySelector('back-button');
 // TODO: Create a function that builds an element and appends it to the DOM
-function buildElement(article, h2, p, blockquote) {
-    const article = document.createElement('article');
-    const h2 = document.createElement('h2');
-    const p = document.createElement('p');
+function buildElement(blog) {
+    const username = document.createElement('username');
+    const title = document.createElement('title');
+    const content = document.createElement('content');
     const blockquote = document.createElement('blockquote');
-    h2.textContent = title;
-    p.textContent = content;
-    blockquote.textContent = username;
-    article.append(h2, p, blockquote);
+    username.textContent = username;
+    title.textContent = title;
+    content.textContent = content;
+    article.append(username, title, content, blockquote);
     main.append(article);
 }
 // TODO: Create a function that handles the case where there are no blog posts to display

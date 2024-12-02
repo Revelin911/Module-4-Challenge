@@ -19,6 +19,7 @@ function handleFormSubmit(event) {
     }; 
     localStorage.setItem('blogData', JSON.stringify(blogData));
     window.location.href = './index.html';
+    localStorage.getItem('blogData');
     }
     }
     
