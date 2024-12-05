@@ -5,24 +5,24 @@ const backButton = document.querySelector('back-button');
 
 // TODO: Create a function that builds an element and appends it to the DOM
 
-function buildElement() {
+function buildElement(blog) {
 
     const title = document.createElement('h2');
     const content = document.createElement('p');
     const username = document.createElement('blockquote');
-    blog.title = title;
-    blog.content = content;
-    blog.username = username;
+    title.textContent = blog.title;
+    content.textContent = blog.content;
+    username.textContent = blog.username;
     article.append(title, content, username);
     main.append(article);
 }
 // TODO: Create a function that handles the case where there are no blog posts to display
 
 function noPosts() {
-    
+    contentDisplay 
     p.textContent = 'No posts to display';
 }
-// TODO: Create a function called `renderBlogList` that renders the list of blog posts if they exist. If not, call the no posts function.
+// TODO: Create a function called `renderBlogList` that renders the list of blog posts if they exist. If not, call the no posts function. 
 
 function renderBlogList() {
     const blogData = readLocalStorage();
