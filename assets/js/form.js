@@ -8,8 +8,9 @@ function handleFormSubmit(event) {
     const username = document.querySelector('#username').value;
     const title = document.querySelector('#title').value;
     const content = document.querySelector('#content').value;
+    
     if (!username || !title || !content) {
-        alert('Please complete the form');
+       document.getElementById('error').textContent = 'Please complete the form'; 
         return;
     } else {
         const blogData = {
