@@ -19,8 +19,11 @@ function buildElement(blog) {
 // TODO: Create a function that handles the case where there are no blog posts to display
 
 function noPosts() {
-    contentDisplay 
-    p.textContent = 'No posts to display';
+     const contentDisplay = document.querySelector('.card');
+     if (contentDisplay && contentDisplay.children.length === 0) {
+     content.textContent = 'No Blog posts yet...';
+     contentDisplay.appendChild(content);
+    }
 }
 // TODO: Create a function called `renderBlogList` that renders the list of blog posts if they exist. If not, call the no posts function. 
 
