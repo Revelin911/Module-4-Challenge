@@ -20,7 +20,7 @@ function buildElement(blog) {
 
 function noPosts() {
      
-     if (article && article.length === 0) {
+     if (article && article.children.length === 0) {
      content.textContent = 'No Blog posts yet...';
      article.appendChild(content);
     }
